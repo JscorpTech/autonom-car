@@ -1,0 +1,25 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define SPEED 128
+#define TURN 103.696
+#define STEP 360 / TURN
+
+#define AS5600_ADDR 0x36
+#define ANGLE_MSB 0x0E
+
+#define LEFT_FORWARD_CHANNEL 0
+#define LEFT_BACK_CHANNEL 0
+#define RIGHT_FORWARD_CHANNEL 1
+#define RIGHT_BACK_CHANNEL 1
+
+#define LEFT_FORWARD_PIN 25
+#define LEFT_BACK_PIN 26
+
+#define RIGHT_BACK_PIN 27
+#define RIGHT_FORWARD_PIN 28
+
+#define WHEEL_RADIUS 18
+#define WHEEL_DISTANCE 100
+
+#endif
