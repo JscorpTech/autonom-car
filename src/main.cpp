@@ -9,6 +9,7 @@
 void setup() {
   Serial.begin(115200);
   Wire.begin(21, 22, 100000); // SDA = 21, SCL = 22, 100kHz
+  Wire1.begin(17, 16, 100000);
 
   leftPrevAngle = leftReadRawAngle();   // Boshlang‘ich burchak
   rightPrevAngle = rightReadRawAngle(); // Boshlang‘ich burchak
@@ -19,7 +20,7 @@ void loop() {
   uint16_t leftAngle = leftReadRawAngle();
   uint16_t rightAngle = rightReadRawAngle();
 
-  if (leftPrevAngle > 3000 && leftAangle < 1000) {
+  if (leftPrevAngle > 3000 && leftAngle < 1000) {
     leftRotationCount++;
   } else if (leftPrevAngle < 1000 && leftAngle > 3000) {
     leftRotationCount++;

@@ -6,7 +6,7 @@ uint32_t leftRotationCount = 0;
 uint16_t leftPrevAngle = 0;
 
 uint16_t rightPrevAngle = 0;
-uint32_t RightRotationCount = 0;
+uint32_t rightRotationCount = 0;
 
 void forward(int distance);
 void back(int distance);

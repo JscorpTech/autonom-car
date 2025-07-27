@@ -1,6 +1,7 @@
+#include "config.h"
+#include <Arduino.h>
+#include <Wire.h>
 
-
-// AS5600 dan xavfsiz burchak o'qish
 uint16_t leftReadRawAngle() {
   Wire.beginTransmission(AS5600_ADDR);
   Wire.write(ANGLE_MSB);
